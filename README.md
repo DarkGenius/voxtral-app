@@ -60,6 +60,16 @@ uv run vllm-omni serve mistralai/Voxtral-4B-TTS-2603 --omni
 uv run voxtral_tts.py -t "Hello, how are you?" -o hello.wav
 ```
 
+### Web-интерфейс (Gradio)
+
+При запущенном vLLM-сервере откройте веб-интерфейс:
+
+```bash
+uv run app.py
+```
+
+Интерфейс будет доступен по адресу `http://localhost:7860`. Позволяет вводить текст, выбирать голос и прослушивать результат прямо в браузере.
+
 ### Offline mode
 
 Загружает модель напрямую в память GPU, сервер не нужен:
